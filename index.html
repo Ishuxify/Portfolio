@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Ishu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b2648404a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="DEsigns/logo.png" alt="logo">
+                <ul id="sidemenu" >
+
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#mywork">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+ 
+            <!-- Floating Navigation -->
+              <div class="fixed-nav">
+                 <ul>
+                    <li><a href="#header" id="home-mobile">Home</a></li>
+                    <li><a href="#about" id="about-mobile">About</a></li>
+                    <li><a href="#services" id="services-mobile">Services</a></li>
+                    <li><a href="#mywork" id="mywork-mobile">My Work</a></li>
+                    <li><a href="#contact" id="contact-mobile">Contact</a></li>
+                 </ul>
+            </div>
+
+            <div class="header-text" >
+              
+                <p class="intro-line">Psychology Student | Tech Enthusiast | Coding & Diversity Advocate </p>
+                <h1>Hi, I'm <span>Ishu</span><br> From Delhi, India.</h1>
+                <p class="welcome-line">Exploring the world of psychology, technology, and innovation – bridging creativity with code.</p>
+            </div>
+
+    
+        
+        
+        </div>
+
+    </div>
+<!-- Yai wala div section mai about me k baare mai h. -->
+    <div id="about">
+       <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+               <img src="DEsigns/profileimage.png">  <!--iske image lgi h-->
+            </div>
+
+            <div class="about-col-2">  <!--or isse about me ka text-->
+                <h1 class="subtitle">About Me</h1>
+                <p>Hello! I'm a fresher with a unique blend of psychology and technology expertise. As a psychology student,
+                     I bring a deep understanding of human behavior, which informs my work in UI/UX design and software development.
+                     This background helps me create user-friendly and intuitive interfaces that truly resonate with people.
+
+                    I specialize in UI/UX design using Figma and Adobe XD, as well as Android application development with Android Studio and
+                     software development using Core Java and C/C++. My approach is always user-centered, 
+                     focusing on creating experiences that are not only functional but also engaging.
+                    
+                    Though I'm new to the professional world, I am eager to apply my academic knowledge and passion for technology in real-world projects.
+                     I am committed to learning, growing, and collaborating with teams to build innovative digital solutions that make a difference.</p>
+
+                    <div class="tab-title">
+
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificate')">Certificates</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX DESIGNER</span><br>Designing Web/App Interfaces.<br> • Tools : Figma And Adobe-xd Softwares.<br>
+                                 • Basic knowledge of HTML, CSS, JAVAScript.</li><br>
+                            
+                            <li><span>SOFTWARE DEVELOPER</span><br>Developing softwares based on Core Java,C/C++.</li><br>
+                            <li><span>ANDROID STUDIO DEVELOPER</span><br>Building Android Mobile Application.<br> • Tools : Android Studio.<br>
+                                • Languages : JAVA, XML, JSON.<br></li><br>
+                            <li><span>DATABASE MANAGEMENT</span><br>Expertise in writing SQL queries, database design, and normalization using MySQL Workbench.</li><br>
+                           
+                       
+                       
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>July 2025: Indira Ghandi National Open University</span><br>Bachelors of Arts(Hons) Psychology.<br>
+                                •  Skills : Research Design & Data Analysis, User Behavior Assessment, Cognitive Insights for UX, Ethical Data Handling, Effective Communication & Collaboration<br>NOTE: Currently in last year.</li><br>
+                            <li><span>June 2022: Cental Board of Secondary Education </span><br>Completed Higher Secondary Schooling.</li><br>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificate">
+
+                        <ul>
+
+                            <li><span>Certicate Of Achievement</span><br>• Principle in Generative AI.</li><br>
+                            <li><span>Certicates Of course completion </span><br>
+                                • Introduction to AI <br>
+                                • Introduction to Data Science <br>
+                                • Introduction to Deep Learning  <br>
+                                • Introduction to NLP (Natural Language Processing)  <br>
+                                • Java 11 Essentials <br>
+                                • Mastering C/C++ Language by Udemy. <br>
+                                
+
+                            </li>
+
+                            <li>NOTE: These certificates are issued by Infosys SpringBoard. Please visit LinkedIn Profile to validate. </li>
+
+                        </ul>
+                    </div>
+            </div>
+          </div>
+       </div>
+
+    </div>
+
+    <!----sevices-->
+
+
+    <div id="services">
+
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Designs</h2>
+                    <p>I specialize in crafting visually appealing and intuitive UI designs using Figma and Adobe XD. From seamless navigation to captivating layouts,
+                         my designs cater to diverse apps, including airplane ticket booking, music, and movie apps. With a focus on user experience,
+                          I deliver modern, responsive, and 
+                         efficient interfaces that elevate digital interactions.
+                         Let's create interfaces that not only look stunning but also deliver functionality with ease!.</p>
+                    <!-- <a href="#"> Learn More</a> -->
+
+                </div>
+                <div>
+                   
+                    <i class="fa-brands fa-app-store-ios"></i>
+
+                    <h2>Android Application Development</h2>
+                    <p>I specialize in building robust and user-centric Android applications using Android Studio.
+                         Whether it's a dynamic pizza order booking system or a feature-rich mobile app, I focus on delivering high-performance solutions with seamless user experiences.
+                          Leveraging Java, XML, and modern Android frameworks, I ensure that every app is intuitive, responsive, and optimized for a range of devices. 
+                          Let's bring your app idea to life with cutting-edge Android development!
+
+                    </p>
+                    <!-- <a href="#"> Learn More</a> -->
+
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Development</h2>
+                    <p>I specialize in building high-performance, reliable software solutions using Core Java and C/C++. Whether it's creating complex systems, optimizing performance, or developing robust applications,
+                         I deliver custom solutions tailored to meet specific needs.
+                         With a strong foundation in programming principles, I ensure scalability, efficiency, and maintainability in every project. 
+                         Let's turn your ideas into functional, optimized software with the power of Java and C/C++!</p>
+                    <!-- <a href="#"> Learn More</a> -->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!--- my work-- isme baad mai or add krna h ----------------------------->
+
+    <div id="mywork">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <h2 class="figma">Me as Figma/Adobe-XD Designer.</h2>
+        <div class="work-list">
+            
+            <div class="work">
+                <img src="DEsigns/air.png" alt="">
+                <div class="layer">
+                    <h3>Airline Ticketing App Design</h3>
+                    <p>Simple UI for an airline ticket booking app, designed in Figma. It includes four interfaces: 
+                        flight search, flight selection, passenger details, and booking confirmation for easy navigation and quick booking.</p>
+                   <a ><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="DEsigns/music.png" alt="">
+                <div class="layer">
+                    <h3>Movie App Design</h3>
+                    <p>Minimalistic UI for a movie streaming app, designed in Figma. It includes a sign-up page, a content listing interface,
+                         and a sleek media player screen for seamless streaming and user interaction.</p>
+                    <a ><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="DEsigns/disneyhotstar.png" alt="">
+                <div class="layer">
+                    <h3>Disney Hotstar Web-Design</h3>
+                    <p>Disney Hotstar clone UI, designed in Figma. Features include a movie listing page, detailed movie information screen, copyright page, 
+                        and a movie playback interface, ensuring a seamless and immersive streaming experience.</p>
+                    <a ><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="DEsigns/frutjuice.png" alt="">
+                
+                <div class="layer">
+                    <h3>Juice Corner Web-Design</h3>
+                    <p>Fresh and vibrant Juice Corner webpage UI, designed in Figma. Showcases a variety of fruit juices with an 
+                        intuitive layout, colorful visuals, and easy navigation for a refreshing user experience.</p>
+                    <a ><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+    
+        </div>
+                    
+
+          <!-------------Yaha sai coding k projects start huye h .--------->
+
+          
+            <h3 class="figma">Me as Software Developer.</h3>
+
+        <div class="work-list">
+               
+            <div class="work">
+                <iframe width="100%" height="315" src="DEsigns/pos.mp4" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen muted></iframe>
+                
+                <!-- isse grid frame k andr text likh skte h -->
+                <div class="description-container">
+                    <div class="description" id="description">
+                        A simple and efficient Point of Sale (POS) system designed for fast food outlets. 
+                        This application allows users to select items, dynamically add them to a list, 
+                        calculate the total bill in real time, and manage actions like payment, printing bills, 
+                        and deleting items from the list. Built using Java, with a graphical user interface 
+                        developed in Swing and JFrame, the system ensures a user-friendly and intuitive 
+                        experience for quick service operations.
+                    </div>
+                    <span class="read-more" id="readMore">Read More</span>
+                </div>
+            </div>
+
+
+
+<!--  -----------------yai code video lgagne k liye h ------------->
+            <div class="work">
+                <iframe width="100%" height="315" src="DEsigns/crp.mp4" frameborder="0" 
+                allow="accelerometer; autoplay muted; encrypted-media; gyroscope; picture-in-picture" allowfullscreen muted></iframe>
+                
+                <!-- isse grid frame k andr text likh skte h -->
+                <div class="description-container">
+                    <div class="description" id="description">
+                    A simple customer data management application designed to collect and organize user information.
+                     The form allows users to input their Name, Age, and Email ID, which is then dynamically added to a table.
+                      Users can perform operations like updating existing records, deleting entries, and viewing the table in real time.
+                       Built using Java, with a graphical user interface implemented via Swing and JFrame,
+                     this project demonstrates efficient data handling and CRUD functionality in desktop applications.
+                    </div>
+                    <span class="read-more" id="readMore">Read More</span>
+                </div>
+            </div>
+            
+
+            <div class="work">
+                <iframe width="100%" height="315" src="DEsigns/stopwatch.mp4" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen muted></iframe>
+                
+                <!-- isse grid frame k andr text likh skte h -->
+                <div class="description-container ">
+                    <div class="description" id="description">
+
+                     A straightforward and interactive stopwatch application built using Java with a graphical user interface designed in Swing and JFrame.
+                     This stopwatch allows users to start, pause, and reset the timer seamlessly.
+                     The interface is minimalist and easy to use, making it perfect for tracking time accurately for various tasks.
+                 
+                    </div>
+                    <span class="read-more" id="readMore">Read More</span>
+                </div>
+            </div>
+
+
+
+            <div class="work">
+                <iframe width="100%" height="315" src="DEsigns/calc.mp4" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen muted></iframe>
+                
+                <!-- isse grid frame k andr text likh skte h -->
+                <div class="description-container ">
+                    <div class="description" id="description">
+
+                     A lightweight and user-friendly calculator app designed exclusively for Android devices. Built using Java and XML in Android Studio,
+                     this app performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
+                     The interface is clean, intuitive, and optimized for various screen sizes, making it ideal for daily calculations on the go.
+                    </div>
+                    <span class="read-more" id="readMore">Read More</span>
+                </div>
+            </div>
+            
+
+        </div>
+        <p>NOTE: These designs and softwares are created solely for practice purposes and does not intend to replicate or compete with any existing brand or service.</p>
+        <a href="https://drive.google.com/drive/folders/1l6ns9Z0C7ZmI4lW8Tz9AhDKHwbGwV9b_" class="button">See More</a>
+    </div>
+    </div>
+
+<!----------------------------contact ------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title" style="font-size: 3rem;">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>ishu9560439430@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+918826755705</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/+918826755705"><i class="fa-brands fa-whatsapp"></i></i></a>
+                    <a href="https://www.instagram.com/i.s._.rajput?igsh=MWY5NWh4ZGNtdWxrZQ%3D%3D"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="https://www.linkedin.com/in/ishu-rajput-38915b287/"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="https://github.com/Ishuxify"><i class="fa-brands fa-github"></i></i></i></a>
+                    
+                </div>
+
+                <a href="DEsigns/Ishuresume.pdf" download class="button button2">Download CV</a>
+
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button button2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; ------COPYRIGHT @ RADHE-KRISHNA. ALL RIGHTS RESERVED-------.<br>  
+            This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</p>
+            
+    </div>
+</div>
+
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+// tabs name will call education, skills 
+function opentab(tabname)   
+{
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    // getting description of skills and eduaction.
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+</script>
+
+<script>
+
+    var sidemenu1 = document.getElementById("sidemenu");
+
+
+    function openmenu(){
+
+       sidemenu1.style.right="0";
+
+    } 
+
+    function closemenu(){
+       sidemenu1.style.right="-200px";
+       
+    } 
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz3wa5hMES5GuQLd236Zv6APwxdYwWIfB3fe9RyDFk_HnSkTfIYmIDvnwuGKSVXENpm/exec'
+    const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+       .then(response => {msg.innerHTML =" Message sent successfully."})
+       setTimeout(function(){
+        msg.innerHTML ="" },5000)
+        form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+<script>
+      const containers = document.querySelectorAll('.description-container');
+
+containers.forEach(container => {
+    const description = container.querySelector('.description');
+    const readMore = container.querySelector('.read-more');
+
+    description.style.overflow = 'hidden';
+    description.style.display = '-webkit-box';
+    description.style.webkitLineClamp = '3';
+    description.style.webkitBoxOrient = 'vertical';
+    readMore.textContent = 'Read More'; // Default button text
+
+    // Toggle "Read More/Read Less" functionality
+    readMore.addEventListener('click', () => {
+        if (description.style.overflow === 'hidden' || description.style.overflow === '') {
+            description.style.overflow = 'visible';
+            description.style.display = 'block';
+            description.style.webkitLineClamp = 'unset';
+            description.style.webkitBoxOrient = 'unset';
+            readMore.textContent = 'Read Less';
+        } else {
+            description.style.overflow = 'hidden';
+            description.style.display = '-webkit-box';
+            description.style.webkitLineClamp = '3';
+            description.style.webkitBoxOrient = 'vertical';
+            readMore.textContent = 'Read More';
+        }
+    });
+});
+
+// Handle menu opening/closing
+function openmenu() {
+  document.getElementById("sidemenu").style.display = "block";
+}
+
+function closemenu() {
+  document.getElementById("sidemenu").style.display = "none";
+}
+
+// Toggle active class for current page
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(link => link.classList.remove('active'));
+    link.classList.add('active');
+  });
+});
+
+// Add sticky class on scroll
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    document.body.classList.add('scrolled');
+    document.querySelector('nav').classList.add('sticky');
+  } else {
+    document.body.classList.remove('scrolled');
+    document.querySelector('nav').classList.remove('sticky');
+  }
+});
+
+
+// Handle active class on link click
+document.querySelectorAll('.fixed-nav a').forEach(link => {
+  link.addEventListener('click', function() {
+    // Remove active class from all links
+    document.querySelectorAll('.fixed-nav a').forEach(link => {
+      link.classList.remove('active');
+    });
+    
+    // Add active class to clicked link
+    this.classList.add('active');
+  });
+});
+
+
+</script>
+
+
+
+
+
+    
+</body>
+</html>
